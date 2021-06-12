@@ -1,0 +1,47 @@
+@mixin font-regular($f: 16px) {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: $f;
+}
+
+@mixin font-semi-bold($f: 16px) {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: $f;
+}
+
+@mixin font-bold($f: 16px) {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: $f;
+}
+
+@mixin flex-box($j: space-between, $a: center) {
+    display: flex;
+    align-items: $a;
+    justify-content: $j;
+}
+
+%button-primary{
+    padding: 11px 25px;
+    background-color: $oragne-color;
+    color: $white-color;
+    @include font-regular(14px);
+    border: none;
+    border-radius: 3px;
+}
+
+%button-secondary{
+    padding: 11px 25px;
+    border: 1px solid $oragne-color;
+    color: $oragne-color;
+    background-color: $white-color;
+    @include font-regular(14px);
+    border-radius: 3px;
+}
+
+%shadow-box{
+    background: $white-color 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 60px $shadow-color;
+    border-radius: 8px;
+}

@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap");
+#intro header .button-donate button {
+  padding: 11px 25px;
+  border: 1px solid #FF5300;
+  color: #FF5300;
+  background-color: #FFFFFF;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 0 -15px;
+}
+
+#intro {
+  background: transparent linear-gradient(243deg, #FBFBFB 0%, #FCFCFC 21%, #FCFCFC 33%, #F6F7F9 45%, #F6F6F6 56%, #F6F7F8 70%, #F6F6F7 100%) 0% 0% no-repeat padding-box;
+}
+
+#intro header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 45px 15px;
+}
+
+#intro header .logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+#intro header nav ul li {
+  display: inline-block;
+  margin: 0 17px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#intro header nav ul li a {
+  color: #222222;
+  text-decoration: none;
+  padding: 10px 0;
+  display: inline-block;
+}
+
+#intro header nav ul li a.active {
+  color: #FF5300;
+  border-bottom: 1px solid #FF5300;
+}
+
+#intro header nav ul li a:hover {
+  color: #FF5300;
+  border-bottom: 1px solid #FF5300;
+}
+
+#intro header .button-donate button {
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#intro header .button-donate button svg {
+  width: 15px;
+  margin-right: 5px;
+}
+
+#intro header .button-donate button svg path {
+  fill: #FF5300;
+}
+
+#intro header .button-donate button:hover {
+  background-color: #FF5300;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+#intro header .button-donate button:hover svg path {
+  fill: #FFFFFF;
+}
+
+#intro .intro-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+  margin-right: -125px;
+}
+
+#intro .intro-heading .content {
+  margin-top: 140px;
+  padding-right: 150px;
+}
+
+#intro .intro-heading .content span {
+  color: #FF5300;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+  margin-bottom: 28px;
+}
+
+#intro .intro-heading .content span:before {
+  content: '';
+  width: 25px;
+  height: 1px;
+  top: 38%;
+  position: absolute;
+  background: #FF5300;
+  left: 0;
+}
+
+#intro .intro-heading .content h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 52px;
+  margin-bottom: 25px;
+  color: #222222;
+}
+
+#intro .intro-heading .content p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #555555;
+}
+
+#intro .intro-heading .img img {
+  width: 550px;
+}
+/*# sourceMappingURL=style.css.map */

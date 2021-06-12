@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
+
+@import '_variables';
+@import '_mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.row{
+    margin: 0 -15px;
+}
+
+
+#intro{
+    background: transparent linear-gradient(243deg, #FBFBFB 0%, #FCFCFC 21%, #FCFCFC 33%, #F6F7F9 45%, #F6F6F6 56%, #F6F7F8 70%, #F6F6F7 100%) 0% 0% no-repeat padding-box;
+    
+    header{
+        @include flex-box();
+        padding: 45px 15px;
+    
+        .logo{
+            @include font-bold(36px);
+        }
+
+        nav{
+            ul{
+                li{
+                    display: inline-block;
+                    margin: 0 17px;
+                    @include font-regular(15px);
+                    a{
+                        color: $black-color;
+                        text-decoration: none;
+                        padding: 10px 0;
+                        display: inline-block;
+                        
+                        &.active{
+                            color: $oragne-color;
+                            border-bottom: 1px solid $oragne-color;
+                        }
+
+                        &:hover{
+                            color: $oragne-color;
+                            border-bottom: 1px solid $oragne-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .button-donate{
+            button{
+                @extend %button-secondary;
+                font-weight: 600;
+                @include flex-box();
+
+                svg{
+                    width: 15px;
+                    margin-right: 5px;
+                    path{
+                        fill: $oragne-color;
+                    }
+                }
+
+                &:hover{
+                    background-color: $oragne-color;
+                    color: $white-color;
+                    cursor: pointer;
+                    svg{
+                        path{
+                            fill: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .intro-heading{
+        @include flex-box(space-between, start);
+        padding: 0 15px;
+        margin-right: -125px;
+
+        .content{
+            margin-top: 140px;
+            padding-right: 150px;
+            span{
+                color: $oragne-color;
+                @include font-regular(14px);
+                position: relative;
+                display: inline-block;
+                padding-left: 30px;
+                margin-bottom: 28px;
+    
+                &:before{
+                    content: '';
+                    width: 25px;
+                    height: 1px;
+                    top: 38%;
+                    position: absolute;
+                    background: $oragne-color;
+                    left: 0;
+                }
+            }
+    
+            h1{
+                @include font-semi-bold(52px);
+                margin-bottom: 25px;
+                color: $black-color;
+            }
+    
+            p{
+                @include font-regular();
+                color: $blackc-color2;
+            }
+        }
+        .img{
+            img{
+                width: 550px;
+            }
+        }
+    }
+}
